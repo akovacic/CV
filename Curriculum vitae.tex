@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage[utf8]{inputenc}
+\usepackage[croatian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{comment}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\makeatletter
+\newcommand{\justified}{%
+  \rightskip\z@skip%
+  \leftskip\z@skip}
+\makeatother
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Antonio} % Your first name
+\familyname{Kovačić} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Vidakovići 1}{Vrapče, 10 090 Zagreb}
+\mobile{(+385) 95 877 3234}
+\phone{(+385) 1  345 5441}
+%\fax{(000) 111 1113}
+\email{in.math0@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+
+\photo[70pt][0.4pt]{ego.png} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{"Per aspera ad astra" - Seneka}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Osobni podaci}
+\cvitem{Ime}{Antonio}
+\cvitem{Prezime}{Kovačić}
+\cvitem{Mobitel}{+385 95 8773-234}
+\cvitem{Mail}{in.math0@gmail.com}
+\cvitem{Adresa}{Vidakovići 1, 10 090 Zagreb}
+\cvitem{Datum rođenja}{23. siječnja 1991.}
+\cvitem{Mjesto rođenja}{Banja Luka, BiH}
+\cvitem{Bračno stanje}{Neoženjen}
+
+\section{Obrazovanje}
+
+\cvitem{2005--2009}{Nadbiskupska klasična gimnazija s pravom javnosti, Zagreb}  % Arguments not required can be left empty
+\cventry{2009--2012}{Sveučilišni prvostupnik matematike}{Sveučilište u Zagrebu}{Prirodoslovno - matematički fakultet}{}{}
+\cventry{2012--2014}{Magistar matematike i računarstva}{Sveučilište u Zagrebu}{Prirodoslovno - matematički fakultet}{}{}
+\cventry{2013--}{Glazbenik - pripravnik}{Glazbena škola Vatroslava Lisinskog}{Solo pjevanje u klasi Mr. art. Bojana Pogrmilovića}{Zagreb}{}
+\section{Diplomski rad}
+
+\cvitem{Naslov}{DNA kriptografija}
+\cvitem{Mentor}{Prof. dr. sc. Andrej Dujella}
+\cvitem{Sažetak}{U radu je opisano DNA računalo, njegova složenost, primjena istog u rješavanju problema Hamiltonovog puta te u probijanju DES kriptosustava. Zatim je predstavljen koncept upotrebe jednokratne bilježnice (OTP), te upotreba istoga u DNA kriptografiji koja ima svojstvo kvantne rezistentnosti (ne može se probiti kvantnim računalom za razliku od RSA kriptosustava). U konačnici je  opisan algoritam za enkripciju i dekripciju podataka pomoću DNA lanaca.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Iskustvo}
+\subsection{Studentski poslovi}
+\cventry{kolovoz 2008.}{Zagrebačke pekarne Klara}{Utinjska 48}{10 020 Zagreb}{}{Pakiranje robe, rad u proizvodnji
+\newline{}\newline{}
+}
+\cventry{srpanj 2011.}{PA-Dora d.o.o.}{Ribnička 61}{10 000 Zagreb}{}{Pakiranje i deklariranje filmova i video sadržaja
+\newline{}\newline{}
+}
+\cventry{kolovoz 2012.}{Monile d.o.o.}{Avenija Dubrovnik 16/7}{10 000 Zagreb}{}{Pakiranje i deklariranje robe
+\newline{}\newline{}
+}
+%------------------------------------------------
+\subsection{Volontiranje}
+\cventry{lipanj 2013.}{HUBIKOT - Hrvatska udruga za bihevioralno - kognitivnu terapiju}{Šenoina 25}{Zagreb}{}{Rad na projektu za kolegij \textit{Računarski praktikum 2} - Izrada WEB aplikcaije za \textit{online} psiho-terapiju}
+\cventry{lipanj -  rujan 2013.}{Župa sv. Barbare}{Vrapčanska 165}{Zagreb}{}{Razvoj aplikacije za župnu knjižnicu i uređivanje župne knjižnice}
+\cventry{2013.-}{Župa sv. Barbare}{Vrapčanska 165}{Zagreb}{}{Držanje  instrukcija iz područja matematike, informatike i klasičnih jezika (latinski i grčki)}
+%------------------------------------------------
+
+\section{Vještine}
+\cvitem{Rad na računalu}{\begin{itemize}
+\item \textit{C, C++, C\#, Python, javaScript, PHP, HTML, CSS} 
+\item Matematički software: \textit{Matlab}, \textit{Octave}, \textit{Wolfram Mathematica}
+\item Obrada teksta i podataka: \LaTeX , Microsoft Word, Microsoft  Excel
+\item Rad s bazom podataka: SQL (MySQL)
+\item Microsoft Windows, Linux
+\end{itemize}}
+\cvitem{Strani jezici}{\begin{itemize}
+\item Engleski jezik - aktivno u govoru i pismu
+\end{itemize}}
+
+\section{Ostalo}
+\cvitem{Hobi i interesi}{\begin{itemize}
+\item Sport: vožnja biciklom
+\item Rad na računalu: programiranje, primjena računarstva u medicini, farmaciji i financijama
+\item Glazba: zborsko (\textit{Zbor sv. Barbare ``Panis Angelicus"}) i solo pjevanje
+\item Ostalo: čitanje (fantazija), šetanje, boravak u prirodi, putovanja
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+\begin{comment}
+\recipient{PLIVA HRVATSKA d.o.o.}{Prilaz baruna Filipovića 25\\10000 Zagreb\\ Republika Hrvatska\\Tel.: + 385 1 372 0000\\Faks: + 385 1 37 20 111\\Email: info@pliva.hr} % Letter recipient
+\date{\today} % Letter date
+
+\opening{\begin{center}
+	\textsc{zamolba}\\
+\end{center}Poštovani,} % Opening greeting
+\closing{S poštovanjem,} % Closing phrase
+\enclosure[Prilog]{Životopis} % List of enclosed documents
+
+\makelettertitle % Print letter title
+\justified
+Potaknut svojim skorašnjim diplomiranjem na Prirodoslovno - matematičkom fakultetu Sveučilišta u Zagrebu na smjeru Računarstvo i matematika, odlučio sam poslati ovu otvorenu molbu. Moje šire područje interesa je primjena računarstva i matematike u medicini, farmaciji i epidemiologiji, a upravo je to moja glavna motivacija da Vam pošaljem ovu otvorenu molbu. \\[0.7 cm]Polažući razne kolegije na svom fakultetu, kao što su matematičko modeliranje u biologiji i strojno učenje, upoznao sam se s nekim osnovnim idejama primjene svoje struke u navedenim područjima, a neke od njih su:
+klasifikacija tkiva (sadrži li kancerogene stanice ili ne) i predviđanje širenja zarazne bolesti na određenom području (matematičko modeliranje). Kako bi proširio svoje znanje o problemima modeliranja u navedenim područjima, omogućio si usavršavanje na istima, a istovremeno mogao raditi i riješavati ih, odlučio sam se javiti Vama u nadi da ćete razmotriti moju molbu te me zaposliti, kako na moje zadovoljstvo tako i na Vaše. 
+
+\makeletterclosing % Print letter signature
+\end{comment}
+%----------------------------------------------------------------------------------------
+
+\end{document}
